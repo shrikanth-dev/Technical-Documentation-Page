@@ -23,12 +23,12 @@ A technical documentation page for C programming concepts, structured with seman
 
 ### Screenshot
 
-![](screenshot.png)
+![](Technical-Documentaton-page.png)
 
 ### Links
 
-- Live Site URL: [Add live URL here]
-- Solution URL: [Add solution URL here]
+- Live Site URL: [live URL](https://shrikanth-dev.github.io/Technical-Documentation-Page/)
+- Solution URL: [solution URL](https://github.com/shrikanth-dev/Technical-Documentation-Page)
 
 ### Built with
 
@@ -38,5 +38,4 @@ A technical documentation page for C programming concepts, structured with seman
 
 ## Author
 
-- LinkedIn - [Your Name](https://linkedin.com/in/your-linkedin)
-
+- LinkedIn - [@G Srikanth](https://www.linkedin.com/in/g-srikanth-gs)
