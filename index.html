@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>C Documentation Page</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<body>
+  <div class="main-body">
+    <nav id="navbar">
+      <header>C Documentation</header>
+      <a href="#program_development_tools" class="nav-link">Program Development Tools</a>
+      <a href="#introduction_to_c" class="nav-link">Introduction to C</a>
+      <a href="#control_structure" class="nav-link">Control Structure</a>
+      <a href="#arrays_and_strings" class="nav-link">Arrays and Strings</a>
+      <a href="#functions_and_storage_classes" class="nav-link">Functions and Storage Classes</a>
+    </nav>
+<main id="main-doc">
+<section class="main-section"  id="program_development_tools"><header>program development tools</header>
+  <P>
+    A programming tool or software development tool is a computer program that software developers use to create, debug, maintain, or otherwise support other programs and applications. The term usually refers to relatively simple programs, that can be combined to accomplish a task, much as one might use multiple hands to fix a physical object. The most basic tools are a source code editor and a compiler or interpreter, which are used ubiquitously and continuously. Other tools are used more or less depending on the language, development methodology, and individual engineer, often used for a discrete task, like a debugger or profiler. Tools may be discrete programs, executed separately – often from the command line – or may be parts of a single large program, called an integrated development environment (IDE).</p>
+  <p> In many cases, particularly for simpler use, simple ad hoc techniques are used instead of a tool, such as print debugging instead of using a debugger, manual timing (of overall program or section of code) instead of a profiler, or tracking bugs in a text file or spreadsheet instead of a bug tracking system. </p>
+  <p>Modern computers are very complex and in order to productively program them, various abstractions are needed. For example, rather than writing down a program's binary representation a programmer will write a program in a programming language like C, Java or Python. Programming tools like assemblers, compilers and linkers translate a program from a human write-able and readable source language into the bits and bytes that can be executed by a computer. Interpreters interpret the program on the fly to produce the desired behavior.
+  </P>
+  <ul>
+    <li>algorithm</li>
+    <li>flowchart</li>
+    <li>program development steps</li>
+  </ul>
+</section>
+  <section class="main-section"     id="introduction_to_c"><header>
+    introduction to c
+  </header>
+    <P>
+    C is a procedural programming language. It was initially developed by Dennis Ritchie in the year 1972. It was mainly developed as a system programming language to write an operating system. The main features of the C language include low-level memory access, a simple set of keywords, and a clean style, these features make C language suitable for system programmings like an operating system or compiler development. </p> 
+<p>Many later languages have borrowed syntax/features directly or indirectly from the C language. Like syntax of Java, PHP, JavaScript, and many other languages are mainly based on the C language. C++ is nearly a superset of C language (Few programs may compile iThe memory system serves as the repository of infn C, but not in C++). 
+Beginning with C programming</p>
+<ul>
+  <li>structure of a c program</li>
+  <li>main method declaration</li>
+  <li>header file inclusion</li>
+  </ul>
+    <p>Structure of a C program 
+After the above discussion, we can formally assess the structure of a C program. By structure, it is meant that any program can be written in this structure only. Writing a C program in any other structure will hence lead to a Compilation Error.</p>
+    <p>Main Method Declaration: The next part of a C program is to declare the main() function. The syntax to declare the main function is:
+Syntax to Declare the main method: 
+ </p>
+    <code>int main()
+{}</code>
+  </section>
+  <section class="main-section"  id="control_structure"><header>control structure</header>
+    <P>A program is nothing but the execution of sequence of one or more instructions. 
+Quite often, it is desirable to alter the sequence of the statements in the program depending upon certain circumstances. (i.e., we have a number of situations where we may have to change the order of execution of statements based on certain conditions) </p>
+<p>Repeat a group of statements until certain specified conditions are met. 
+This involves a kind of decision making to see whether a particular condition has occurred or not and direct the computer to execute certain statements accordingly.
+Based on application, it is necessary / essential
+
+(i) To alter the flow of a program 
+(ii) Test the logical conditions 
+(iii) Control the flow of execution as per the selection these conditions can be placed in the program using decision-making statements. </P>
+<ul>
+  <li>desition making statements </li>
+  <li>if-else statements</li>
+  <li>nested if-else statements</li>
+  <li>else-if ladder</li>
+  <li>switch statement</li>
+  </ul>
+  <code>if (expression) // This expression is evaluated. If expression is TRUE statements inside the braces will be executed
+{
+statement 1;
+statement 2;
+}
+statement 1;// Program control is transfered directly to this line, if the expression is FALSE
+statement 2;</code>
+  </section>
+  <section class="main-section"     id="arrays_and_strings"><header>arrays and strings</header>
+    <P>
+     String is a sequence of characters that are treated as a single data item and terminated by a null character '\0'. Remember that the C language does not support strings as a data type. A string is actually a one-dimensional array of characters in C language. These are often used to create meaningful and readable programs. </p>
+    <p>In C language, arrays are reffered to as structured data types. An array is defined as finite ordered collection of homogenous data, stored in contiguous memory locations.
+
+Here the words,
+
+finite means data range must be defined.
+ordered means data must be stored in continuous memory addresses.
+homogenous means data must be of similar data type.
+    </P>
+<ul>
+  <li>one dimensional arrays</li>
+  <li>two dimensional arrays</li>
+  <li>strings</li>
+  </ul>
+<code>Declaring and Initializing a string variables:
+// valid
+char name[13] = "StudyTonight";        
+char name[10] = {'c','o','d','e','\0'};      
+
+// Illegal
+char ch[3] = "hello";    
+char str[4];
+str = "hello";  </code>
+  </section>
+  <section class="main-section"       id="functions_and_storage_classes"><header>functions and storage classes</header>
+    <P>
+      A storage class defines the scope (visibility) and life-time of variables and/or functions within a C Program. They precede the type that they modify. We have four different storage classes in a C program −
+    </P>
+    <ul>
+  <li>auto</li>
+      <li>static</li>
+      <li>register</li>
+      <li>extern</li>
+      </ul>
+      <p>The auto Storage Class
+The auto storage class is the default storage class for all local variables.</p>
+      <code>{
+   int mount;
+   auto int month;
+}</code>
+ <p>The register Storage Class
+The register storage class is used to define local variables that should be stored in a register instead of RAM. This means that the variable has a maximum size equal to the register size (usually one word) and can't have the unary '&' operator applied to it (as it does not have a memory location).</p>
+      <code>{
+   register int  miles;
+}</code>
+  </section>
+</main>
+</div>
+</body>
+</html>
